@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="js/calcularGorjeta.js"></script>
+    <title>Calculadora de gorjetas</title>
+
+</head>
+<body>
+
+    <div id="calculadora">
+        <form>
+            <h1>Calculadora de Gorjeta</h1>
+            <div id="valorconta">
+                <label for="vconta">Valor da conta:</label> 
+                <input id="vconta" type="text" placeholder="R$">
+            </div>
+            <div id="qualidade">
+                <label for="qservico">Qualidade do serviço:</label>
+                <select id="qservico">
+                    <option value="0.1">Excelente - 10%</option>
+                    <option value="0.08">Ótimo - 8%</option>
+                    <option value="0.05">Bom - 5%</option>
+                    <option value="0.02">Ruim - 2%</option>
+                </select>
+            </div>
+
+        </form>
+        <div id="valorestotais">
+            <div id="botao">
+                <input type="button" onclick="calcularGorjeta()" value="Calcular Gorjeta">
+            </div>
+            <div id="lblgorjeta">
+                <label for="valorgorjeta">Valor da Gorjeta:</label>
+            </div>
+            <div id="vg">
+                <span id="valorgorjeta">R$</span>
+            </div>
+            <div id="lbltotal">
+                <label for="valortotal">Valor Total:</label>
+            </div>
+            <div id="vt">
+                <span id="valortotal">R$</span>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
